@@ -28,6 +28,7 @@ const LeasePage = () => {
     setLeases([]); // Clear previous data
   
     const id = JSON.parse(localStorage.getItem("user"));
+    
   
     axios
       .get('https://mining-api-3nk8.onrender.com/lease/getall')
