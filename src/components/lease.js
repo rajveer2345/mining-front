@@ -30,7 +30,7 @@ const LeasePage = () => {
     const id = JSON.parse(localStorage.getItem("user"));
   
     axios
-      .get('http://localhost:4000/lease/getall')
+      .get('https://mining-api-3nk8.onrender.com/lease/getall')
       .then((response) => {
         setLeases(response.data);
       })
